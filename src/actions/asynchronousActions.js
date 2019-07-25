@@ -1,4 +1,4 @@
-import { getAllTechnologyItems } from '../api';
+import { getAllTechnologyItems } from '../data/api';
 import { receiveTechnologyItems } from './technologyItems';
 
 /**

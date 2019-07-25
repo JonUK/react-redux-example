@@ -1,16 +1,10 @@
 
 .grid-container {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) ) ;
-  /*background-color: #fff;*/
-  /*color: #444;*/
 }
 
-.grid-item {
-  /*background-color: #444;*/
-  /*color: #fff;*/
-  border-radius: 5px;
-  padding: 20px;
-  /*font-size: 150%;*/
+.card.full-height { /* Set card in grid to be full height */
+  height: 100%;
 }
