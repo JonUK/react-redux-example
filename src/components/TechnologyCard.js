@@ -1,14 +1,21 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { toggleSelection } from '../actions/technologyItems';
 
 class TechnologyCard extends Component {
 
   render() {
 
-    const { technologyItem } = this.props;
+    const { technologyItem, toggleSelection } = this.props;
+    let className = 'card full-height';
+
+    if (technologyItem.isSelected) {
+      className += ' border-primary';
+    }
 
     return (
-      <div className="card full-height">
+      <div className={className}>
         <div className="card-body">
           <h5 className="card-title">
             { technologyItem.name }
@@ -21,7 +28,9 @@ class TechnologyCard extends Component {
           </p>
         </div>
         <div className="card-body">
-          <a href="#" className="card-link">Select Item</a>
+          <a href="#" onClick={() => toggleSelection(technologyItem.id)} className="card-link">
+            Toggle Selection
+          </a>
         </div>
       </div>
     );
@@ -32,4 +41,10 @@ TechnologyCard.propTypes = {
   technologyItem: PropTypes.object.isRequired
 };
 
-export default TechnologyCard;
+function mapDispatchToProps(dispatch) {
+  return {
+    toggleSelection: (id) => dispatch(toggleSelection(id))
+  };
+}
+
+export default connect(null, mapDispatchToProps)(TechnologyCard);

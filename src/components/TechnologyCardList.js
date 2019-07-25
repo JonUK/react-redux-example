@@ -11,7 +11,6 @@ class TechnologyCardList extends Component {
 
     return (
       <div>
-        <h2>Grid View</h2>
 
         <div className="grid-container">
 

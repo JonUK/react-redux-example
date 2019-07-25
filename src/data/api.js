@@ -11,25 +11,29 @@ const dummyData = {
     id: 'VueJS',
     name: 'Vue.js',
     subtitle: 'The Progressive JavaScript Framework',
-    summary: 'Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces.'
+    summary: 'Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces.',
+    isSelected: false
   },
   Bootstrap: {
     id: 'Bootstrap',
     name: 'Bootstrap',
     subtitle: 'Build responsive, mobile-first projects on the web',
-    summary: 'Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.'
+    summary: 'Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.',
+    isSelected: false
   },
   React: {
     id: 'React',
     name: 'React',
     subtitle: 'A JavaScript library for building user interfaces',
-    summary: 'React makes it painless to create interactive UIs'
+    summary: 'React makes it painless to create interactive UIs',
+    isSelected: false
   },
   Knockout: {
     id: 'Knockout',
     name: 'Knockout',
     subtitle: 'Simplify dynamic JavaScript UIs with the MVVM pattern',
-    summary: 'By encapsulating data and behavior into a view model, you get a clean, extensible foundation on which to build sophisticated UIs'
+    summary: 'By encapsulating data and behavior into a view model, you get a clean, extensible foundation on which to build sophisticated UIs',
+    isSelected: false
   }
 };
 

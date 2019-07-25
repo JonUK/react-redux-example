@@ -4,6 +4,7 @@ import { handleReceiveTechnologyItems } from './actions/asynchronousActions';
 import './App.css';
 
 import TechnologyCardList from './components/TechnologyCardList';
+import TechnologyTable from './components/TechnologyTable';
 
 class App extends Component {
 
@@ -30,13 +31,15 @@ class App extends Component {
           : <div className="row">
               <div className="col-sm border">
 
+                <h2>Grid View</h2>
                 <TechnologyCardList />
 
               </div>
               <div className="col-sm border">
-                <h2>List View</h2>
 
-                Right
+                <h2>List View</h2>
+                <TechnologyTable />
+
               </div>
             </div>
         }
