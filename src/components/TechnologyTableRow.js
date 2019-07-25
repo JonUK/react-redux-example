@@ -17,7 +17,7 @@ class TechnologyTableRow extends Component {
     return(
       <tr className={className}>
         <td>{ technologyItem.name }</td>
-        <td>{ technologyItem.summary }</td>
+        <td>{ technologyItem.subtitle }</td>
         <td>
           <a href="#" onClick={() => toggleSelection(technologyItem.id)}>
             Toggle Selection
