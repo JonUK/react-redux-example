@@ -5,7 +5,7 @@ import './App.css';
 
 import TechnologyCardList from './components/TechnologyCardList';
 import TechnologyTable from './components/TechnologyTable';
-import TechnologyList from './components/TechnologyList';
+import TechnologySelectedList from './components/TechnologySelectedList';
 
 class App extends Component {
 
@@ -42,7 +42,7 @@ class App extends Component {
                 <TechnologyTable />
 
                 <h2>HTML List</h2>
-                <TechnologyList />
+                <TechnologySelectedList />
 
               </div>
             </div>
